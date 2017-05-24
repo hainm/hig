@@ -37,3 +37,9 @@ which will trigger our build script to create an updated release file in [src/we
 - Make sure `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` are set in `/.env`.
 - Run the gemini tests and generate a report: `$ npm run gemini-report`
 - View the report: `$ open ./gemini-report/index.html`
+
+## Continuous Integration
+
+Whenever changes to this project are pushed to a branch (including master), the test suite runs on CircleCi. Make sure a pull request has passing tests before merging it. If a change you make causes tests to fail on master, please address them promptly.
+
+[View the build here.](https://circleci.com/gh/adsk-hig/hig)
